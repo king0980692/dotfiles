@@ -13,13 +13,13 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 sudo apt install -y python3-pip
 
-git clone --bare https://github.com/king0980693/dotfiles.git $HOME/.dotfiles
+#git clone --bare https://github.com/king0980693/dotfiles.git $HOME/.dotfiles
 
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+#alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-rm ~/.zshrc
+#rm ~/.zshrc
 
-dotfiles checkout
+#dotfiles checkout
 
 
                                                                                                                 1,1           All
