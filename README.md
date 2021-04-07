@@ -29,7 +29,10 @@ You might be ensure below requirement should be satisfy:
       * (If you using SSH, you need to modify[need sudo] "/etc/passwd" ,which be like: username@address :bin/zsh )
 * [vim-plug] 
      * ```sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim' ```
-      
+
+* [pip]
+     * ```sudo apt install python3-pip```
+
 * (enter vim/neovim) typing ```:PluginInstall```
 
 
