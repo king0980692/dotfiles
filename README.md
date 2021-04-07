@@ -18,6 +18,9 @@ Good Luck !!!
 ---
 ## After entering the new environment
 You might be ensure below requirement should be satisfy:
+* (change default root passwd):
+     1. ```sudo -i```
+     2. ```passwd```
 * ```sudo apt-get update```
 * ```sudo apt-get -y install neovim```
 * ```sudo apt-get -y  install zsh```
