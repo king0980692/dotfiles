@@ -1,5 +1,6 @@
 # Leon's dotfiles 
-###### ref: https://www.anand-iyer.com/blog/2018/a-simpler-way-to-manage-your-dotfiles.html
+
+###### ref: https://antelo.medium.com/how-to-manage-your-dotfiles-with-git-f7aeed8adf8b
 I refer this article to manage my whole dotfils, which including .zshrc, .vimrc and some neovim config file 
 ![image](https://user-images.githubusercontent.com/21136873/113861782-28511800-97da-11eb-93be-f9fc09958c13.png)
 (my personal start up page of vim using Startify)
@@ -9,6 +10,11 @@ Hope to keep clean to manage it.
 Good Luck !!!
 
 --- 
+## Usage
+1. git clone --bare https://github.com/king0980692/dotfiles.git $HOME/.dotfiles
+2. alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+3. dotfiles checkout
+
 
 ## After entering the new environment
 You might be ensure below requirement should be satisfy:
