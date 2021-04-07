@@ -5,21 +5,23 @@ let mapleader = '\'
 
 " set python path
 
-set pyxversion=3
-let g:python3_host_prog = '/usr/bin/python3'
+"set pyxversion=3
+"let g:python3_host_prog = '/usr/bin/python3'
 
 " Load configs
-for fpath in split(globpath(expand(s:curdir.'/.config/nvim/config'), '*.vim'), '\n')
-   exe 'source' fpath
-endfor
+"for fpath in split(globpath(expand(s:curdir.'/.config/nvim/config'), '*.vim'), '\n')
+"   exe 'source' fpath
+"endfor
 
 
 " Options setup
 " ============================================================={{{
 "
 " 使用顏色主題 
+"
+set bg=dark
 "colorscheme dracula
-colorscheme medic_chalk
+"colorscheme medic_chalk
 "colorscheme primary
 "可以使用滑鼠控制
 set mouse=a
@@ -86,37 +88,4 @@ else
 endif
 
 
-
-"
-" " }}}
-
-
-
-" Defx setup ================================================================{{{
-
-"call defx#custom#column('icon', {
-"      \ 'directory_icon': '▸',
-"      \ 'opened_icon': '▾',
-"      \ 'root_icon': ' ',
-"      \ })
-call defx#custom#column('filename', {
-      \ 'min_width': 40,
-      \ 'max_width': 40,
-      \ })
-call defx#custom#column('mark', {
-      \ 'readonly_icon': '✗',
-      \ 'selected_icon': '✓',
-      \ })
-call defx#custom#option('_', {
-      \ 'winwidth': 35,
-      \ 'columns': 'git:mark:indent:icons:filename:type',
-      \ 'split': 'vertical',
-      \ 'direction': 'topleft',
-      \ 'show_ignored_files': 0,
-      \ 'buffer_name': '',
-      \ 'toggle': 1,
-      \ 'resume': 1
-      \ })
-
-" }}}
 
