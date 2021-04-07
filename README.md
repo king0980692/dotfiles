@@ -2,7 +2,7 @@
 ###### ref: https://www.anand-iyer.com/blog/2018/a-simpler-way-to-manage-your-dotfiles.html
 I refer this article to manage my whole dotfils, which including .zshrc, .vimrc and some neovim config file 
 ![image](https://user-images.githubusercontent.com/21136873/113861782-28511800-97da-11eb-93be-f9fc09958c13.png)
-
+(my personal start up page of vim using Startify)
 
 Hope to keep clean to manage it.
 
@@ -17,5 +17,8 @@ You might be ensure below requirement should be satisfy:
 * sudo apt-get -y  install zsh
 * sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 * chsh -s /bin/zsh (If you using SSH, you need to modify[need sudo] "/etc/passwd" ,which be like: username@address :bin/zsh )
+* [vim-plug] sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+* (enter vim/neovim) typing ```:PluginInstall```
 
 
