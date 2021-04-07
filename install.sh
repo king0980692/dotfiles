@@ -15,9 +15,9 @@ sudo apt install -y python3-pip
 
 #git clone --bare https://github.com/king0980692/dotfiles.git $HOME/.dotfiles
 
-#alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
-#rm ~/.zshrc
+rm ~/.zshrc
 
 #dotfiles checkout
 
