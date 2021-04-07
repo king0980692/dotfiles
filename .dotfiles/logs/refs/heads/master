@@ -1,0 +1,3 @@
+0000000000000000000000000000000000000000 d39f0dbe14d5ead0ca64faedc7e12cd762d0d314 Leon Chang <king0980692@gmail.com> 1617775925 +0800	commit (initial): Add vimrc
+d39f0dbe14d5ead0ca64faedc7e12cd762d0d314 6ee6ec6598af27fa86ddeb91f5b05f559b0ddee4 Leon Chang <king0980692@gmail.com> 1617775957 +0800	commit: Add zshrc
+6ee6ec6598af27fa86ddeb91f5b05f559b0ddee4 f43e8b9d570ed4a01c95e11d4a6f3375772a2ba6 Leon Chang <king0980692@gmail.com> 1617776265 +0800	commit: Add nvim config folder
