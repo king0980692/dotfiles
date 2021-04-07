@@ -31,7 +31,7 @@ You might be ensure below requirement should be satisfy:
      * ```sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim' ```
 
 * [pip]
-     * ```sudo apt install python3-pip```
+     * ```sudo apt install -y python3-pip```
 
 * (enter vim/neovim) typing ```:PluginInstall```
 
