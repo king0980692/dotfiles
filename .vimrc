@@ -9,9 +9,9 @@ let mapleader = '\'
 "let g:python3_host_prog = '/usr/bin/python3'
 
 " Load configs
-"for fpath in split(globpath(expand(s:curdir.'/.config/nvim/config'), '*.vim'), '\n')
-"   exe 'source' fpath
-"endfor
+for fpath in split(globpath(expand(s:curdir.'/.config/nvim/config'), '*.vim'), '\n')
+   exe 'source' fpath
+endfor
 
 
 " Options setup
