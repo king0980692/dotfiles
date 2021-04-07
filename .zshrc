@@ -78,8 +78,9 @@ ZSH_THEME="jbergantine"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git pipenv autojump zsh-autosuggestions zsh-syntax-highlighting)
+#plugins=(git pipenv autojump zsh-autosuggestions zsh-syntax-highlighting)
 
+plugins=(git )
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -131,20 +132,4 @@ alias v='nvim'
 alias pip=pip3
 alias python=python3
 
-alias fd='fdfind'
-
-export FZF_DEFAULT_COMMAND="fdfind --exclude={.git,.idea,.vscode,.sass-cache,node_modules,build,tmp} --type f"
-#export FZF_DEFAULT_COMMAND='fdfind --exclude={.git,node_modules,build} --type f'
-#export FZF_DEFAULT_OPTS="--height 40% --layout=reverse --preview '(highlight -O ansi {} || cat {}) 2> /dev/null | head -500'"
-export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-
-# for fzf search
-#[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-#
-#
-
-export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
-#export DISPLAY=$(ifconfig | grep inet | awk '{print $2}' | head -n 1 | awk '{print $0":0"}')
-
-#[ -z "$(ps -ef | grep cron | grep -v grep)"  ] && sudo /etc/init.d/cron start &> /dev/null
 alias dotfiles='/usr/bin/git --git-dir=/home/leon/.dotfiles/ --work-tree=/home/leon'
