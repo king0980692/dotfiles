@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =9
+let g:netrw_dirhist_9='/mnt/c/Users/king0/OneDrive/workspace/ng_blog/ng-blog'
+let g:netrw_dirhist_8='/mnt/c/Users/king0/OneDrive/workspace/ng_blog'
+let g:netrw_dirhist_7='/mnt/c/Users/king0/OneDrive/workspace/ng_blog/ng-blog'
+let g:netrw_dirhist_6='/mnt/c/Users/king0/OneDrive/workspace/ng_blog'
+let g:netrw_dirhist_5='/mnt/c/Users/king0/OneDrive/workspace/ng_blog/ng-blog'
+let g:netrw_dirhist_4='/mnt/c/Users/king0/OneDrive/workspace/ng_blog'
+let g:netrw_dirhist_3='/mnt/c/Users/king0/OneDrive/workspace/ng_blog/ng-blog'
+let g:netrw_dirhist_2='/mnt/c/Users/king0/OneDrive/workspace/ng_blog'
+let g:netrw_dirhist_1='/home/leon/.config/nvim'
