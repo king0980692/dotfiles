@@ -32,7 +32,8 @@ You might be ensure below requirement should be satisfy:
 
 * [pip]
      * ```sudo apt install -y python3-pip```
-
+* [node.js]
+     * ```sudo apt install nodejs``` 
 * (enter vim/neovim) typing ```:PluginInstall```
 
 
