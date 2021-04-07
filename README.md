@@ -21,6 +21,8 @@ You might be ensure below requirement should be satisfy:
 * (change default root passwd):
      1. ```sudo -i```
      2. ```passwd```
+
+* ```sudo add-apt-repository ppa:neovim-ppa/stable ```
 * ```sudo apt-get update```
 * ```sudo apt-get -y install neovim```
 * ```sudo apt-get -y  install zsh```
