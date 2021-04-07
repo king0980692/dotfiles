@@ -10,7 +10,7 @@ set pastetoggle=<leader>p
 nnoremap <f5> :source % <CR>
 
 " Startify
-map <silent><leader>] :Startify  <CR>
+map <silent><leader>a :Startify  <CR>
 
 " Tab nav
 "nnoremap <silent> H :tabprevious<CR>                                                                            
