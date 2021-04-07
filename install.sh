@@ -21,7 +21,7 @@ rm ~/.zshrc
 
 dotfiles checkout
 
-zsh
+echo -ne '\n' | zsh
 
 vim +'PlugInstall --sync' +qa
 
