@@ -32,7 +32,7 @@ Good Luck !!!
 Just copy [install.sh](https://github.com/king0980692/dotfiles/blob/master/install.sh) or download to your new machine, like azure or ecs, and ```sh install.sh```.<br>
 for convenient, I post the [install.sh](https://github.com/king0980692/dotfiles/blob/master/install.sh) code below
 or just <br>
-```wget https://github.com/king0980692/dotfiles/blob/master/install.sh```
+```wget https://raw.githubusercontent.com/king0980692/dotfiles/master/install.sh```
 
 ```bash
 echo -ne '\n' | sudo add-apt-repository ppa:neovim-ppa/stable
