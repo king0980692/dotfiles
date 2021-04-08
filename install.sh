@@ -28,6 +28,6 @@ vim +'PlugInstall' +qa
 
 zsh
 
-
+pip install yapf black isort pylint pynvim
 
                                                                                                                 1,1           All
