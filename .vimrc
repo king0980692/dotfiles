@@ -1,7 +1,7 @@
 let s:curdir = fnamemodify(resolve(expand('<sfile>:p')), ':h')
 let &rtp.=','.s:curdir
 " Set leader key
-let mapleader = '\' 
+let mapleader = '\'
 
 " set python path
 
@@ -17,11 +17,11 @@ endfor
 " Options setup
 " ============================================================={{{
 "
-" 使用顏色主題 
+" 使用顏色主題
 "
-set bg=dark
+"set bg=dark
 "colorscheme dracula
-"colorscheme medic_chalk
+colorscheme medic_chalk
 "colorscheme primary
 "可以使用滑鼠控制
 set mouse=a
@@ -62,7 +62,7 @@ set t_ti= t_te=
 
 
 " clipboard
-" set clipboard=unnamed 
+" set clipboard=unnamed
 " Some servers have issues with backup files, see #649.
 set nobackup
 set nowritebackup
@@ -86,6 +86,3 @@ if has("patch-8.1.1564")
 else
 	set signcolumn=yes
 endif
-
-
-

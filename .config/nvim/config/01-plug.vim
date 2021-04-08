@@ -104,16 +104,18 @@ let g:slime_python_ipython = 1
 Plug 'dense-analysis/ale'
 " Check Python files with flake8 and pylint.
 let g:ale_linters = {
-            \   'python':['flake8', 'pylint']
+            \   'python':['pyls','pylint','pycodestyle']
             \ }
 " Fix Python files with autopep8 and yapf.
 "let b:ale_fixers = ['autopep8', 'yapf']
 let g:ale_fixers = {
             \   '*' : ['remove_trailing_lines','trim_whitespace'],
-            \   'python': ['black','yapf', 'isort'],
+            \   'python': ['black','yapf', 'isort','autopep8'],
             \ }
 let g:ale_fix_on_save = 1
 let g:ale_lint_on_enter = 0
+let g:ale_completion_enabled = 1
+set omnifunc=ale#completion#OmniFunc
 
 " deoplete.vim
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
