@@ -8,7 +8,9 @@ I refer this article to manage my whole dotfils, which including .zshrc, .vimrc 
 Hope to keep clean to manage it.
 
 Good Luck !!!
+
 ---
+
 ## Update this dotfiles
 1. ```git clone --bare https://github.com/USERNAME/dotfiles.git $HOME/.dotfiles```
 2. ```alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'```
