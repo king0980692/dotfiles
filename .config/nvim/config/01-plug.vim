@@ -49,7 +49,7 @@ let g:start_header = [
 " 			\ g:start_indent_str . '██║░░░░░█████╗░░██║░░██║██╔██╗██║█████╗╚██╗░██╔╝██║██╔████╔██║',
 " 			\ g:start_indent_str . '██║░░░░░██╔══╝░░██║░░██║██║╚████║╚════╝░╚████╔╝░██║██║╚██╔╝██║',
 " 			\ g:start_indent_str . '███████╗███████╗╚█████╔╝██║░╚███║░░░░░░░░╚██╔╝░░██║██║░╚═╝░██║',
-" 			\ g:start_indent_str . '╚══════╝╚══════╝░╚════╝░╚═╝░░╚══╝░░░░░░░░░╚═╝░░░╚═╝╚═╝░░░░░╚═╝',  
+" 			\ g:start_indent_str . '╚══════╝╚══════╝░╚════╝░╚═╝░░╚══╝░░░░░░░░░╚═╝░░░╚═╝╚═╝░░░░░╚═╝',
 " \]
 hi link StartifyHeader StartifySection
 
@@ -80,7 +80,7 @@ Plug 'Yggdroot/indentLine'
 
 " surrond.vim
 " ================================================
-Plug 'tpope/vim-surround' 
+Plug 'tpope/vim-surround'
 
 
 " Color Themes
@@ -109,10 +109,14 @@ let g:ale_linters = {
 " Fix Python files with autopep8 and yapf.
 "let b:ale_fixers = ['autopep8', 'yapf']
 let g:ale_fixers = {
+            \   '*' : ['remove_trailing_lines','trim_whitespace'],
             \   'python': ['black','yapf', 'isort'],
             \ }
 let g:ale_fix_on_save = 1
 let g:ale_lint_on_enter = 0
+
+" deoplete.vim
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 
 " -------------------  end of plug ---------------------------------
