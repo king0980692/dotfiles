@@ -12,6 +12,6 @@ Good Luck !!!
 
 ---
 ## Deploy to new enviroment 
-#### Just copy install.sh or download to your new machine, like azure or ecs, and ```sh install.sh```.<br>
+Just copy install.sh or download to your new machine, like azure or ecs, and ```sh install.sh```.<br>
 
 
