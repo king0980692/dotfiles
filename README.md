@@ -14,9 +14,10 @@ Good Luck !!!
 ## Update this dotfiles
 1. ```git clone --bare https://github.com/USERNAME/dotfiles.git $HOME/.dotfiles```
 2. ```alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'```
-3. ```dotfiles add <your_update_files>```
-4. ```dotfiles commim -m <what you done>```
-5. ```dotfiles push ```
+3. ```cd ~ ``` (the root directory) 
+4. ```dotfiles add <your_update_files>```
+5. ```dotfiles commim -m <what you done>```
+6. ```dotfiles push ```
 
 
 ---
