@@ -61,6 +61,19 @@ function! s:filter_header(lines) abort
 endfunction
 let g:startify_custom_header = s:filter_header(g:start_header)
 
+
+" lightline
+" ================================================
+Plug 'itchyny/lightline.vim'
+let g:lightline = {
+      \ 'colorscheme': 'one',
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'readonly', 'filename', 'modified'  ] ]
+      \ },
+      \ 'component': {
+      \ },
+      \ }
 " indentLine
 " ================================================
 Plug 'Yggdroot/indentLine'
@@ -87,6 +100,12 @@ let g:slime_target = "tmux"
 let g:slime_default_config = {"socket_name": "default", "target_pane": "{right-of}"}
 let g:slime_python_ipython = 1
 
+" ale
+Plug 'dense-analysis/ale'
+" Check Python files with flake8 and pylint.
+"let b:ale_linters = ['flake8', 'pylint']
+" Fix Python files with autopep8 and yapf.
+"let b:ale_fixers = ['autopep8', 'yapf']
 
 " -------------------  end of plug ---------------------------------
 call plug#end()
