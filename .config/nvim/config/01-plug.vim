@@ -103,9 +103,14 @@ let g:slime_python_ipython = 1
 " ale
 Plug 'dense-analysis/ale'
 " Check Python files with flake8 and pylint.
-"let b:ale_linters = ['flake8', 'pylint']
+let g:ale_linters = {
+            \   'python':['flake8', 'pylint']
+            \ }
 " Fix Python files with autopep8 and yapf.
 "let b:ale_fixers = ['autopep8', 'yapf']
-
+let g:ale_fixers = {
+            \   'python': ['black','yapf', 'isort'],
+            \ }
+let g:ale_fix_on_save = 1
 " -------------------  end of plug ---------------------------------
 call plug#end()
