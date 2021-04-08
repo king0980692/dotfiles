@@ -22,12 +22,11 @@ rm ~/.zshrc
 dotfiles checkout
 
 alias vim='nvim'
+alias pip='pip3'
 
+pip install yapf black isort pylint autopep8 pynvim
 vim +'PlugInstall' +qa
 
+export PATH=$PATH:~/.local/bin
 
 zsh
-
-pip install yapf black isort pylint pynvim
-
- git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm                                                                                 1,1           All
