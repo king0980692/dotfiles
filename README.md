@@ -2,7 +2,7 @@
 - [ ] tmux and some setting
 - [ ] sharing the method to manage neovim plugin by vim script
 - [ ] setting up the ALE plugin, the linter/fixer for python
-- [X] Start coding ...
+- [X] ~~Start coding ...
 
 
 # Leon's dotfiles 
