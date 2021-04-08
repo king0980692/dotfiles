@@ -66,5 +66,7 @@ vim +'PlugInstall' +qa
 zsh
 
 pip install yapf flake8 black isort pylint pynvim
+
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ```
 

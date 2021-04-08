@@ -30,4 +30,4 @@ zsh
 
 pip install yapf black isort pylint pynvim
 
-                                                                                                                1,1           All
+ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm                                                                                 1,1           All
