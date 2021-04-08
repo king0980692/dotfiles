@@ -23,7 +23,7 @@ dotfiles checkout
 
 zsh
 
-vim +'PlugInstall --sync' +qa
+vim +'PlugInstall' +qa
 
 
                                                                                                                 1,1           All
