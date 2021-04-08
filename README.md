@@ -65,6 +65,6 @@ vim +'PlugInstall' +qa
 
 zsh
 
-pip install yapf flake8 black isort pylint
+pip install yapf flake8 black isort pylint pynvim
 ```
 
