@@ -1,3 +1,10 @@
+# TODO LIST
+- [ ] tmux and some setting
+- [ ] sharing the method to manage neovim plugin by vim script
+- [ ] setting up the ALE plugin, the linter/fixer for python
+- [X] Start coding ...
+
+
 # Leon's dotfiles 
 
 ###### ref: https://antelo.medium.com/how-to-manage-your-dotfiles-with-git-f7aeed8adf8b
