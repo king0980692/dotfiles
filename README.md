@@ -64,5 +64,7 @@ vim +'PlugInstall' +qa
 
 
 zsh
+
+pip install yapf,flake8,black
 ```
 
