@@ -21,9 +21,13 @@ rm ~/.zshrc
 
 dotfiles checkout
 
-zsh
+alias vim='nvim'
 
 vim +'PlugInstall' +qa
+
+
+zsh
+
 
 
                                                                                                                 1,1           All
