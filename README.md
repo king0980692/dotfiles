@@ -24,7 +24,7 @@ Good Luck !!!
 3. ```cd ~ ``` (the root directory) 
 4. ```dotfiles add <your_update_files>```
 5. ```dotfiles commim -m <what you done>```
-6. ```dotfiles push ```
+6. ```dotfiles push -u origin master ```
 
 
 ---
