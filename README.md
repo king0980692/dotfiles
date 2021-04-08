@@ -34,7 +34,6 @@ for convenient, I post the [install.sh](https://github.com/king0980692/dotfiles/
 or just <br>
 ```wget https://github.com/king0980692/dotfiles/blob/master/install.sh```
 
-<br>
 ```bash
 echo -ne '\n' | sudo add-apt-repository ppa:neovim-ppa/stable
 
