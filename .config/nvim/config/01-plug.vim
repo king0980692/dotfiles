@@ -112,5 +112,8 @@ let g:ale_fixers = {
             \   'python': ['black','yapf', 'isort'],
             \ }
 let g:ale_fix_on_save = 1
+let g:ale_lint_on_enter = 0
+
+
 " -------------------  end of plug ---------------------------------
 call plug#end()
