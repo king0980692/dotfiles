@@ -131,5 +131,7 @@ alias v='nvim'
 
 alias pip=pip3
 alias python=python3
+export PATH=$PATH:~/.local/bin
+
 
 alias dotfiles='/usr/bin/git --git-dir=/home/leon/.dotfiles/ --work-tree=/home/leon'
