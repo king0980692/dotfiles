@@ -146,5 +146,11 @@ if ! zplug check --verbose; then
     fi
 fi
 
+export clicolor=1
+
 # Then, source plugins and add commands to $PATH
 zplug load
+
+
+# Four autojump plugin
+[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh || echo "failed to load the >> autojump <<"
