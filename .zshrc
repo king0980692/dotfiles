@@ -80,7 +80,7 @@ ZSH_THEME="jbergantine"
 # Add wisely, as too many plugins slow down shell startup.
 #plugins=(git pipenv autojump zsh-autosuggestions zsh-syntax-highlighting)
 
-plugins=(git )
+plugins=(git autojump)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
@@ -152,5 +152,7 @@ export clicolor=1
 zplug load
 
 
+#For autosuggestion
+bindkey '^ ' autosuggest-accept
 # Four autojump plugin
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh || echo "failed to load the >> autojump <<"
+#[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh || echo "failed to load the >> autojump <<"
