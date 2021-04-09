@@ -31,6 +31,7 @@ export PATH=$PATH:~/.local/bin
 
 yes | curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
 
+sudo apt-get install autojump
 
 zsh
 
