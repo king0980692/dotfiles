@@ -19,10 +19,11 @@ alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 rm ~/.zshrc
 
-dotfiles checkout
+dotfiles checkout .zshrc .vimrc .tmux.conf
 
 alias vim='nvim'
 alias pip='pip3'
+
 
 pip install yapf black isort pylint autopep8 pynvim
 vim +'PlugInstall' +qa
