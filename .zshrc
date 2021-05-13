@@ -47,6 +47,7 @@ if ! zplug check --verbose; then
 fi
 
 export clicolor=1
+export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
 
 # Then, source plugins and add commands to $PATH
 zplug load
