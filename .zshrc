@@ -51,3 +51,6 @@ export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
 
 # Then, source plugins and add commands to $PATH
 zplug load
+
+bindkey '^ ' autosuggest-accept
+
