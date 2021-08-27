@@ -1,5 +1,5 @@
-# neovim install
-echo -ne '\n' | sudo add-apt-repository ppa:neovim-ppa/stable
+# neovim-0.5 install
+echo -ne '\n' | sudo add-apt-repository ppa:neovim-ppa/unstable
 
 sudo apt-get update
 
