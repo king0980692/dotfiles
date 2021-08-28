@@ -46,8 +46,11 @@ if ! zplug check --verbose; then
     fi
 fi
 
-export clicolor=1
-export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
+# between quotation marks is the tool output for LS_COLORS
+# REF : https://geoff.greer.fm/lscolors/
+export LS_COLORS="di=0:ln=35:so=32:pi=33:ex=31:bd=34;46:cd=34;43:su=30;41:sg=30;46:tw=30;42:ow=30;43"
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+
 
 # Then, source plugins and add commands to $PATH
 zplug load
