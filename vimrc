@@ -5,7 +5,7 @@
 let mapleader = '\' 
 
 set pyxversion=3
-" let g:python3_host_prog = '/Users/leon/.pyenv/shims/python3'
+let g:python3_host_prog = '~/.pyenv/shims/python3'
 set cursorline
 
 au InsertLeave,WinEnter * set cursorline nocursorcolumn
@@ -136,7 +136,11 @@ let g:EasyMotion_smartcase = 1
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
 
+
+
 highlight CursorLine ctermbg=21 cterm=bold
+
+hi Search term=reverse cterm=underline,bold  ctermbg=25 ctermfg=Yellow
 
 set updatetime=10
 
@@ -147,6 +151,7 @@ function! HighlightWordUnderCursor()
         match none
     endif
 endfunction
+
 
 autocmd! CursorHold,CursorHoldI * call HighlightWordUnderCursor()
 set statusline=
