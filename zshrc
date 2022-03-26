@@ -5,6 +5,8 @@ precmd() { vcs_info }
 
 # Format the vcs_info_msg_0_ variable
 zstyle ':vcs_info:git:*' formats '%F{1}(%b)%f'
+zstyle ':completion:*' menu select
+
 
 # Set up the prompt (with git branch name)
 setopt PROMPT_SUBST
@@ -16,11 +18,35 @@ setopt PROMPT_SUBST
 PROMPT='[%F{2}%m%f %F{magenta}@ %F{30}%~%f] ${vcs_info_msg_0_}
 %F{184}%n%f # '
 
+zmodload -i zsh/complist
 
-alias vim='vim'
+bindkey -M menuselect 'h' vi-backward-char bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+bindkey -v '^?' backward-delete-char
+
+lfcd () {
+    tmp="$(mktemp)"
+    lf -last-dir-path="$tmp" "$@"
+    if [ -f "$tmp" ]; then
+        dir="$(cat "$tmp")"
+        rm -f "$tmp"
+        [ -d "$dir" ] && [ "$dir" != "$(pwd)" ] && cd "$dir"
+    fi
+}
+bindkey -s '^o' 'lfcd\n'
+
+
+
+alias sz='source ~/.zshrc'
+alias vz='vim ~/.zshrc'
+alias vv='vim ~/.vimrc'
+alias vt='vim ~/.tmux.conf'
+alias v='vim'
 alias nvim='nvim.appimage'
-alias pip=pip3
-alias python=python3
+alias ta='tmux at'
+#alias pip=pip3
+#alias python=python3
 
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/bin
@@ -47,8 +73,6 @@ export PATH=$PATH:~/bin
 ## Then, source plugins and add commands to $PATH
 #zplug load --verbose
 
-export clicolor=1
-export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
 
 
 ### Added by Zinit's installer
@@ -95,10 +119,47 @@ zinit wait lucid for \
 zinit light zsh-users/zsh-history-substring-search
   zmodload zsh/terminfo
 
+zinit load agkozak/zsh-z
+zinit ice depth=1
+zinit light jeffreytse/zsh-vi-mode
+
 bindkey '^ ' autosuggest-accept
-bindkey '^p' history-substring-search-up
-bindkey '^n' history-substring-search-down
+#bindkey '^p' history-substring-search-up
+#bindkey '^n' history-substring-search-down
 #bindkey "^[^[[D" backward-word
 #bindkey "^[^[[C" forward-word
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
+bindkey '^p' history-beginning-search-backward
+bindkey '^n' history-beginning-search-forward
 
 #zprof
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+
+# export clicolor=1
+# export LS_COLORS="$LS_COLORS:ow=1;34:tw=1;34:"
+
+## Colorize the ls output ##
+#alias ls='ls -G'
+
+## Use a long listing format ##
+#alias ll='ls -la'
+
+## Show hidden files ##
+#alias l.='ls -d .* --color=auto'
+#alias ls='LS_COLORS="di=00;34:ln=00;35:so=00;32:pi=01;33:ex=00;31:bd=00;34" ls'
+#alias ls='ls --color=always'
+#
+#export LS_OPTIONS='--color=auto'
+export LS_COLORS="di=00;34:ln=00;35:so=00;32:pi=01;33:ex=00;31:bd=00;34"
+#eval "`dircolors`"
+alias ls='ls $LS_OPTIONS'
+
+
+# set zsh file history
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+setopt appendhistory
