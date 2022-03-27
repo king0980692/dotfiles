@@ -20,7 +20,8 @@ PROMPT='[%F{2}%m%f %F{magenta}@ %F{30}%~%f] ${vcs_info_msg_0_}
 
 zmodload -i zsh/complist
 
-bindkey -M menuselect 'h' vi-backward-char bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'h' vi-backward-char 
+bindkey -M menuselect 'k' vi-up-line-or-history
 bindkey -M menuselect 'l' vi-forward-char
 bindkey -M menuselect 'j' vi-down-line-or-history
 bindkey -v '^?' backward-delete-char
@@ -134,8 +135,8 @@ bindkey '^p' history-beginning-search-backward
 bindkey '^n' history-beginning-search-forward
 
 #zprof
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+# eval "$(pyenv init -)"
+# eval "$(pyenv virtualenv-init -)"
 
 
 # export clicolor=1
