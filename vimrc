@@ -19,6 +19,8 @@ set nu
 " reserve screen after quiting
 " set t_ti= t_te=
 
+set linebreak
+set showbreak=›››\     " there's a trailing <Space>, here.
 
 filetype plugin indent on
 " show existing tab with 4 spaces width
