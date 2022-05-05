@@ -133,12 +133,6 @@ highlight PmenuSel ctermbg=123 guibg=gray cterm=bold
 
 
 
-
-
-
-highlight CursorLine ctermbg=125 cterm=bold
-highlight Pmenu ctermbg=61 guibg=gray ctermfg=Yellow
-highlight PmenuSel ctermbg=123 guibg=gray cterm=bold
 hi Search term=reverse cterm=underline,bold  ctermbg=25 ctermfg=Yellow
 function! HighlightWordUnderCursor()
     if getline(".")[col(".")-1] !~# '[[:punct:][:blank:]]'
