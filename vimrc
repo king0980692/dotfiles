@@ -2,7 +2,7 @@
 " vim general setting 
 "
 
-let mapleader = '\' 
+let mapleader = '.' 
 
 set pyxversion=3
 let g:python3_host_prog = '~/.pyenv/shims/python3'
@@ -146,4 +146,9 @@ autocmd! CursorHold,CursorHoldI * call HighlightWordUnderCursor()
 
 "autocmd BufRead *.py nmap <leader>c :w<Esc>G:r!python %<CR>`.
 "autocmd BufRead *.sh nmap <leader>c :w<Esc>G:r!sh %<CR>`.
+nnoremap <C-q>n :bn <CR>
+nnoremap <C-q>p :bp <CR>
+nnoremap <C-q>o :bp <CR>
+nnoremap <C-q>w :bw <CR>
+nnoremap <C-q>l :Buffers <CR>
 
