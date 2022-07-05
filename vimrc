@@ -1,3 +1,17 @@
+"=======================================================================
+" Automatic Install
+"=======================================================================
+
+" Install vim-plug if not found
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  
+  " Install all the plugins
+  autocmd VimEnter * PlugInstall
+endif
+
+
 "
 " vim general setting 
 "
@@ -61,11 +75,23 @@ let g:UltiSnipsEditSplit="vertical"
 
 colorscheme gentooish
 
+" Airline
 let g:airline_theme='wombat'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 let g:airline#extensions#tabline#buffer_idx_mode = 1
 "let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline_inactive_collapse=1
+let g:airline#extensions#taboo#enabled = 1
+let g:airline_section_c = '%t'
+
+" remove the filetype part
+let g:airline_section_x=''
+let g:airline_section_y=''
+let g:airline_section_z = '%{strftime("%a %d %b %H:%M")}'
+
+" remove separators for empty sections
+let g:airline_skip_empty_sections = 1
 
 " tagbar
 nmap <leader>q :TagbarToggle<CR>
