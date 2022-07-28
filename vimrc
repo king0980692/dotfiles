@@ -50,11 +50,9 @@ set mouse=a
 call plug#begin()
 
     Plug 'ludovicchabant/vim-gutentags'
-    Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
     Plug 'octol/vim-cpp-enhanced-highlight'
     Plug 'majutsushi/tagbar'
     Plug 'flazz/vim-colorschemes'
-    Plug 'voldikss/vim-floaterm'
     Plug 'easymotion/vim-easymotion'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
